@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+main {
+  font-family: 'Roboto', arial;
+  background-color: hsl(175, 100%, 90%);
+  color: rgb(0, 0, 120);
+}
+header {
+  text-align: center;
+  padding: 5px 0px 15px 0px;
+}
+h2 {
+  font-size: 18px;
+}
+#img-div {
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  padding:2% 0% 0% 0%;
+  margin: 0% 2% 0% 2%;
+  border-radius: 20px;
+  background-color: hsl(175, 55%, 70%);
+}
+#image {
+  border-radius: 20px;
+  max-width: 70%;
+  height: auto;
+}
+#img-caption {
+  font-size: 15px;
+  text-align: center;
+}
+#time-line {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 50%;
+  justify-content: center;
+  padding: 20px 0px 0px 0px;
+  font-size: 16px;
+}
+h3 {
+  justify-self: center;
+  text-align: justify;
+  grid-row: 1 / 2;
+}
+ul {
+  grid-row: 2 / 3;
+  text-align: justify;
+}
+li{
+  padding: 0px 0px 10px 0px;
+  text-align: justify;
+}
+#quote {
+  display: grid;
+  grid-template-columns: 60%;
+  justify-content: center;
+  text-align: justify;
+  font-size: 18px;
+  padding: 5px 0px 15px 0px;
+}
+#wiki {
+  font-size: 20px;
+  text-align: center;
+  padding: 15px 0px 5px 0px;
+}
+footer {
+  font-size: 18px;
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+}
+@media (max-width: 800px) {
+  #img-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #image {
+    width: 80%;
+    height: auto;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  #img-caption {
+    width: 80%;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  #time-line {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 90%;
+    padding: 5% 10% 0% 0%;
+    justify-content: center;
+  }
+  li {
+    list-style: none;
+  }
+}
